@@ -29,6 +29,10 @@ public class ProgressDialogloading {
     public static ProgressDialog mProgressDialog;
     public Context mContext;
 
+    /**
+     * @param context 上下文
+     * @param message 提示的信息
+     */
     public ProgressDialogloading(Context context, String message) {
         this.mContext = context;
         // 提示正在加载
@@ -63,8 +67,11 @@ public class ProgressDialogloading {
 
     /**
      * 仿微博的dialogloading
+     *
+     * @param context 上下文
+     * @param msg     提示的信息
+     * @return 返回一个dialog
      */
-
     public static Dialog createWeiboLoadingDialog(Context context, String msg) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View v = inflater.inflate(R.layout.dialog_loading, null);// 得到加载view
@@ -101,6 +108,8 @@ public class ProgressDialogloading {
 
     /**
      * 隐藏仿微博dialog
+     *
+     * @param mDialogUtils dialog的对象
      */
     public static void dismissWeiboDialog(Dialog mDialogUtils) {
         if (mDialogUtils != null && mDialogUtils.isShowing()) {
