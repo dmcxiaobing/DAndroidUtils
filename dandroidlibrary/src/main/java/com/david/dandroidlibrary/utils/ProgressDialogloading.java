@@ -93,7 +93,8 @@ public class ProgressDialogloading {
         window.setGravity(Gravity.CENTER);
         window.setAttributes(lp);
         window.setWindowAnimations(R.style.PopWindowAnimStyle);
-        loadingDialog.show();
+        //这里将show的方法让我们自己去调用
+        //loadingDialog.show();
 
         return loadingDialog;
     }
