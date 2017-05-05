@@ -18,8 +18,7 @@ DAndroidUtils是我在Android开发中的一些常用功能封装。
 
 使用Maven构建时添加依赖代码如下:
 
-`
-<dependency>
+`<dependency>
 
    <groupId>com.david.dandroidlibrary</groupId>
 
@@ -29,9 +28,7 @@ DAndroidUtils是我在Android开发中的一些常用功能封装。
 
    <type>pom</type>
 
- </dependency>
-
- `
+ </dependency>`
 
 
 使用介绍以及功能介绍请参考示例项目的配置与使用。
