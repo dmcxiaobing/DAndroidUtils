@@ -26,9 +26,7 @@ DAndroidUtils是我在Android开发中的一些常用功能封装。
 
 - **使用Gradle构建时添加依赖代码如下:**
 
-```
-compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.0'
-```
+`compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.0'`
 
 - **使用Maven构建时添加依赖代码如下:**
 
