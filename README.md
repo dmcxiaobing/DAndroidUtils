@@ -16,13 +16,13 @@ DAndroidUtils是我在Android开发中的一些常用功能封装。
 
 4，Activity的管理工具类
 
-5，通过url获取Json数据 // 通过url获取网络Bitmap数据 （httpClient所完成）
-
 6,网络状态的判断（是否有网络，以及网络是3G,WIFI等状况）
 
 7,多种loading等待框的介绍与使用。
 
 8,sharepreference的完美封装。
+
+gradle和maven构建项目版本目前只有loading功能。后续会抽时间尽快更新。
 
 - **使用Gradle构建时添加依赖代码如下:**
 
@@ -39,6 +39,8 @@ DAndroidUtils是我在Android开发中的一些常用功能封装。
    <type>pom</type>
  </dependency>
 ```
+
+如果使用eclipse可以 [点击这里下载aar文件https://dl.bintray.com/davidzheng/dandroidlibrary/com/david/dandroidlibrary/dandroidlibrary/](), 然后用zip解压, 取出jar文件.
 
 使用介绍以及功能介绍请参考示例项目的配置与使用。
 
