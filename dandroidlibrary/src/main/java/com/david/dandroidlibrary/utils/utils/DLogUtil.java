@@ -17,7 +17,7 @@ import com.david.dandroidlibrary.utils.constants.Constant;
  * <p>
  * 测试时是true，上线时改为false
  */
-public final class LogUtil {
+public final class DLogUtil {
     /**
      * all Log print on-off
      */
@@ -47,7 +47,7 @@ public final class LogUtil {
      */
     private final static String defaultTag = Constant.LOG_TAG;
 
-    private LogUtil() {
+    private DLogUtil() {
     }
 
     /**

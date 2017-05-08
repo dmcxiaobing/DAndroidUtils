@@ -7,10 +7,10 @@
         android:id="@+id/btn_one_loading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:text="点击演示系统炫酷loading"/>
     <Button
         android:id="@+id/btn_weibo_loading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:text="点击演示仿微博loading"/>
 </LinearLayout>
