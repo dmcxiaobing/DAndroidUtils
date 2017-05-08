@@ -14,21 +14,21 @@ import java.util.List;
  * @交流Qq ：986945193
  * 类名：activity的管理类
  */
-public class ActivityManagerUtils {
-    private static ActivityManagerUtils mActivityManagerUtils;
+public class DActivityManagerUtils {
+    private static DActivityManagerUtils mActivityManagerUtils;
 
 
     static {
-        mActivityManagerUtils = new ActivityManagerUtils();
+        mActivityManagerUtils = new DActivityManagerUtils();
     }
 
-    private ActivityManagerUtils() {
+    private DActivityManagerUtils() {
         /**
          * 这里面写一些需要执行初始化的工作
          */
     }
 
-    public static ActivityManagerUtils getInstance() {
+    public static DActivityManagerUtils getInstance() {
         return mActivityManagerUtils;
 
     }
