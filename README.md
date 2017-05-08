@@ -40,6 +40,15 @@ gradle和maven构建项目版本目前只有loading功能。后续会抽时间�
  </dependency>
 ```
 
+- **使用Ivy构建时添加依赖代码如下:**
+
+
+```
+<dependency org='com.david.dandroidlibrary' name='dandroidlibrary' rev='1.0.0'>
+  <artifact name='dandroidlibrary' ext='pom' ></artifact>
+</dependency>
+```
+
 如果使用eclipse可以 [点击这里下载aar文件](https://dl.bintray.com/davidzheng/dandroidlibrary/com/david/dandroidlibrary/dandroidlibrary/), 然后用zip解压, 取出jar文件.
 
 使用介绍以及功能介绍请参考示例项目的配置与使用。
