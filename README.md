@@ -22,7 +22,7 @@ gradle和maven构建项目版本目前只有loading功能。后续会抽时间�
 
 - **使用Gradle构建时添加依赖代码如下:**
 
-`compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.0'`
+`compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.1'`
 
 - **使用Maven构建时添加依赖代码如下:**
 
@@ -31,7 +31,7 @@ gradle和maven构建项目版本目前只有loading功能。后续会抽时间�
 <dependency>
    <groupId>com.david.dandroidlibrary</groupId>
    <artifactId>dandroidlibrary</artifactId>
-   <version>1.0.0</version>
+   <version>1.0.1</version>
    <type>pom</type>
  </dependency>
 ```
@@ -40,7 +40,7 @@ gradle和maven构建项目版本目前只有loading功能。后续会抽时间�
 
 
 ```
-<dependency org='com.david.dandroidlibrary' name='dandroidlibrary' rev='1.0.0'>
+<dependency org='com.david.dandroidlibrary' name='dandroidlibrary' rev='1.0.1'>
   <artifact name='dandroidlibrary' ext='pom' ></artifact>
 </dependency>
 ```

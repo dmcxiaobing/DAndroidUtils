@@ -5,6 +5,8 @@ package com.david.dandroidutils;
  * @GitHub: https://github.com/QQ986945193
  * @CSDN博客: http://blog.csdn.net/qq_21376985
  * @OsChina空间: https://my.oschina.net/mcxiaobing
+ * gradlew install
+ * gradlew bintrayUpload
  */
 
 import android.content.Intent;

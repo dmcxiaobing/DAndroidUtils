@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-version = "1.0.0"
+version = "1.0.1"
 android {
     compileSdkVersion 22
     buildToolsVersion "23.0.1"
@@ -39,7 +39,7 @@ android {
     def siteUrl = 'https://github.com/QQ986945193/DAndroidUtils' // 项目主页。
     def gitUrl = 'git@github.com/QQ986945193/DAndroidUtils.git' // Git仓库的url。
 
-// 唯一包名，比如compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.0'中的com.david.dandroidlibrary就是这里配置的。
+// 唯一包名，比如compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.1'中的com.david.dandroidlibrary就是这里配置的。
     group = "com.david.dandroidlibrary"
     install {
         repositories.mavenInstaller {
@@ -49,7 +49,7 @@ android {
                     packaging 'aar'
                     // 项目描述，复制我的话，这里需要修改。
                     name 'dandroidlibrary'// 可选，项目名称。
-                    description 'this is my first dandroidutilslibrary version one.'// 可选，项目描述。
+                    description 'this is my first dandroidutilslibrary version 1.0.1.'// 可选，项目描述。
                     url siteUrl // 项目主页，这里是引用上面定义好。
 
                     // 软件开源协议，现在一般都是Apache License2.0吧，复制我的，这里不需要修改。

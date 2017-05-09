@@ -35,7 +35,8 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:22.1.0'
     testCompile 'junit:junit:4.12'
-    compile project(':dandroidlibrary')
+//    compile project(':dandroidlibrary')
     /*利用gradle引用我们的dandroidlibrary*/
 //    compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.0'
+    compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.1'
 }
