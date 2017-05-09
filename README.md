@@ -8,19 +8,15 @@ DAndroidUtils是我在Android开发中的一些常用功能封装。
 
 - **其中常用工具类utils包括:**
 
-1,正则提供验证邮箱、手机号、电话号码、身份证号码、数字等方法
+1,log打印日志的工具类
 
-2,log打印日志的工具类
+2,Toast封装工具类
 
-3，Toast封装工具类
+3,Activity的管理工具类
 
-4，Activity的管理工具类
+4,网络状态的判断（是否有网络，以及网络是3G,WIFI等状况）
 
-6,网络状态的判断（是否有网络，以及网络是3G,WIFI等状况）
-
-7,多种loading等待框的介绍与使用。
-
-8,sharepreference的完美封装。
+5,多种loading等待框的介绍与使用。
 
 gradle和maven构建项目版本目前只有loading功能。后续会抽时间尽快更新。
 

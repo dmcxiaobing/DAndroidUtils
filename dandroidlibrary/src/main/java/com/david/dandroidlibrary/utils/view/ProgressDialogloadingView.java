@@ -1,4 +1,4 @@
-package com.david.dandroidlibrary.utils;
+package com.david.dandroidlibrary.utils.view;
 /*
  * @Author ：程序员小冰
  * @新浪微博 ：http://weibo.com/mcxiaobing
@@ -25,15 +25,16 @@ import com.david.dandroidlibrary.utils.constants.Constant;
 /**
  * loading等待的提示框。
  */
-public class ProgressDialogloading {
+public class ProgressDialogloadingView {
     public static ProgressDialog mProgressDialog;
     public Context mContext;
 
     /**
-     * @param context 上下文
-     * @param message 提示的信息
+     * @param context     上下文
+     * @param message     提示的信息
+     * @param mCancelable 是否可以按返回键等取消loading
      */
-    public ProgressDialogloading(Context context, String message) {
+    public ProgressDialogloadingView(Context context, String message, boolean mCancelable) {
         this.mContext = context;
         // 提示正在加载
         mProgressDialog = new ProgressDialog(mContext);
@@ -42,7 +43,7 @@ public class ProgressDialogloading {
         } else {
             mProgressDialog.setMessage(message);
         }
-        mProgressDialog.setCancelable(false);
+        mProgressDialog.setCancelable(mCancelable);
     }
 
 
@@ -68,11 +69,12 @@ public class ProgressDialogloading {
     /**
      * 仿微博的dialogloading
      *
-     * @param context 上下文
-     * @param msg     提示的信息
+     * @param context     上下文
+     * @param msg         提示的信息
+     * @param mCancelable 是否可以按返回键等取消loading
      * @return 返回一个dialog
      */
-    public static Dialog createWeiboLoadingDialog(Context context, String msg) {
+    public static Dialog createWeiboLoadingDialog(Context context, String msg, boolean mCancelable) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View v = inflater.inflate(R.layout.dialog_loading, null);// 得到加载view
         LinearLayout layout = (LinearLayout) v
@@ -85,7 +87,7 @@ public class ProgressDialogloading {
 
         }
         Dialog loadingDialog = new Dialog(context, R.style.WeiboDialogStyle);// 创建自定义样式dialog
-        loadingDialog.setCancelable(true); // 是否可以按“返回键”消失
+        loadingDialog.setCancelable(mCancelable); // 是否可以按“返回键”消失
         loadingDialog.setCanceledOnTouchOutside(false); // 点击加载框以外的区域
         loadingDialog.setContentView(layout, new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,

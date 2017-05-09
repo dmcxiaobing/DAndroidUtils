@@ -15,7 +15,7 @@ import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 
-import com.david.dandroidlibrary.utils.ProgressDialogloading;
+import com.david.dandroidlibrary.utils.view.ProgressDialogloadingView;
 import com.david.dandroidutils.R;
 
 /**
@@ -31,12 +31,12 @@ public class LoadingActivity extends Activity {
                 case 1:
                     //由于library已经进行了非空等判断，所以，这里不用注释掉无用的loading。实际项目实际使用
                     dialogloading.dismissHiddenLoading();
-                    ProgressDialogloading.dismissWeiboDialog(weiboDialog);
+                    ProgressDialogloadingView.dismissWeiboDialog(weiboDialog);
                     break;
             }
         }
     };
-    private ProgressDialogloading dialogloading;
+    private ProgressDialogloadingView dialogloading;
     private Dialog weiboDialog;
 
     private Button btn_one_loading;
@@ -56,8 +56,8 @@ public class LoadingActivity extends Activity {
         btn_one_loading.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //创建对象
-                dialogloading = new ProgressDialogloading(LoadingActivity.this, null);
+                //创建对象 上下文，提示内容，是否可以按返回键取消
+                dialogloading = new ProgressDialogloadingView(LoadingActivity.this, null, true);
                 //调用显示的方法
                 dialogloading.showLoading();
                 mHandler.sendEmptyMessageDelayed(1, 3000);
@@ -68,8 +68,8 @@ public class LoadingActivity extends Activity {
         btn_weibo_loading.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //创建对象
-                weiboDialog = ProgressDialogloading.createWeiboLoadingDialog(LoadingActivity.this, null);
+                //创建对象 上下文，提示内容，是否可以按返回键取消
+                weiboDialog = ProgressDialogloadingView.createWeiboLoadingDialog(LoadingActivity.this, null, true);
                 //调用显示的方法
                 weiboDialog.show();
                 mHandler.sendEmptyMessageDelayed(1, 3000);
