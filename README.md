@@ -1,6 +1,6 @@
 # DAndroidUtils
 
-DAndroidUtils是我在Android开发中的一些常用功能封装。
+DAndroidUtils是david在Android开发中的一些常用功能封装。
 
 其中功能包括多种，如：多种实现loading等待框。你只需引入library之后一行代码
 
@@ -18,7 +18,7 @@ DAndroidUtils是我在Android开发中的一些常用功能封装。
 
 5,多种loading等待框的介绍与使用。
 
-gradle和maven构建项目版本目前只有loading功能。后续会抽时间尽快更新。
+更多丰富的功能。后续会抽时间尽快更新。
 
 - **使用Gradle构建时添加依赖代码如下:**
 
