@@ -19,13 +19,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.david.dandroidlibrary.R;
-import com.david.dandroidlibrary.utils.constants.Constant;
+import com.david.dandroidlibrary.utils.constants.DConstant;
 
 
 /**
  * loading等待的提示框。
  */
-public class ProgressDialogloadingView {
+public class DProgressDialogloadingView {
     public static ProgressDialog mProgressDialog;
     public Context mContext;
 
@@ -34,12 +34,12 @@ public class ProgressDialogloadingView {
      * @param message     提示的信息
      * @param mCancelable 是否可以按返回键等取消loading
      */
-    public ProgressDialogloadingView(Context context, String message, boolean mCancelable) {
+    public DProgressDialogloadingView(Context context, String message, boolean mCancelable) {
         this.mContext = context;
         // 提示正在加载
         mProgressDialog = new ProgressDialog(mContext);
         if ((message == null) || message.equals("")) {
-            mProgressDialog.setMessage(Constant.LOADING_DATA);
+            mProgressDialog.setMessage(DConstant.LOADING_DATA);
         } else {
             mProgressDialog.setMessage(message);
         }
@@ -81,7 +81,7 @@ public class ProgressDialogloadingView {
                 .findViewById(R.id.dialog_loading_view);// 加载布局
         TextView tipTextView = (TextView) v.findViewById(R.id.tipTextView);// 提示文字
         if ((msg == null) || msg.equals("")) {
-            tipTextView.setText(Constant.LOADING_DATA);// 设置加载信息
+            tipTextView.setText(DConstant.LOADING_DATA);// 设置加载信息
         } else {
             tipTextView.setText(msg);// 设置加载信息
 

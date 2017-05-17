@@ -10,7 +10,7 @@ package com.david.dandroidlibrary.utils.utils;
  */
 
 
-import com.david.dandroidlibrary.utils.constants.Constant;
+import com.david.dandroidlibrary.utils.constants.DConstant;
 
 /**
  * 打印日志的工具类，方便查看log
@@ -45,7 +45,7 @@ public final class DLogUtil {
     /**
      * default print tag
      */
-    private final static String defaultTag = Constant.LOG_TAG;
+    private final static String defaultTag = DConstant.LOG_TAG;
 
     private DLogUtil() {
     }
