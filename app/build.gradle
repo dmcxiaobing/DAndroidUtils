@@ -36,6 +36,11 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.1.0'
     testCompile 'junit:junit:4.12'
     compile project(':dandroidlibrary')
+    //Okhttp的引用
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
     /*利用gradle引用我们的dandroidlibrary*/
-//    compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.1'
+    //    compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.1'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.android.support:multidex:1.0.1'
+
 }

@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.david.dandroidutils.activity.DAutoRefreshListViewActivity;
 import com.david.dandroidutils.activity.LoadingActivity;
 
 /**
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private Button btn_loading;
+    private Button btn_refresh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +46,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, LoadingActivity.class));
             }
         });
+        /**
+         * 刷新以及加载更多功能展示
+         */
+        btn_refresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, DAutoRefreshListViewActivity.class));
+
+            }
+        });
 
     }
 
     private void initView() {
         btn_loading = (Button) findViewById(R.id.btn_loading);
+        btn_refresh = (Button) findViewById(R.id.btn_refresh);
     }
 }
