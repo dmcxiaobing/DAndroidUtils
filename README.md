@@ -61,3 +61,12 @@ DAndroidUtils是david在Android开发中的一些常用功能封装。
 [欢迎点击关注我的微博](http://weibo.com/mcxiaobing)
 
 更多功能会持续封装添加。提高我们的开发速度，欢迎star。fork。
+
+
+- **[version版本功能简单介绍:](https://github.com/QQ986945193/DAndroidUtils/wiki)**
+
+1.0.0版本功能：只有loading
+
+1.0.1版本添加功能：网络判断，日志等工具类。并可以自定义设置是否可按返回键取消。
+
+1.0.2版本：再次添加一些工具类。并新增功能刷新以及加载更多的自定义View.
