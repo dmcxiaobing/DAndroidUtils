@@ -22,7 +22,7 @@ DAndroidUtils是david在Android开发中的一些常用功能封装。
 
 - **使用Gradle构建时添加依赖代码如下:**
 
-`compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.1'`
+`compile 'com.david.dandroidlibrary:dandroidlibrary:1.0.2'`
 
 - **使用Maven构建时添加依赖代码如下:**
 
@@ -31,7 +31,7 @@ DAndroidUtils是david在Android开发中的一些常用功能封装。
 <dependency>
    <groupId>com.david.dandroidlibrary</groupId>
    <artifactId>dandroidlibrary</artifactId>
-   <version>1.0.1</version>
+   <version>1.0.2</version>
    <type>pom</type>
  </dependency>
 ```
@@ -40,7 +40,7 @@ DAndroidUtils是david在Android开发中的一些常用功能封装。
 
 
 ```
-<dependency org='com.david.dandroidlibrary' name='dandroidlibrary' rev='1.0.1'>
+<dependency org='com.david.dandroidlibrary' name='dandroidlibrary' rev='1.0.2'>
   <artifact name='dandroidlibrary' ext='pom' ></artifact>
 </dependency>
 ```
