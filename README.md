@@ -1,6 +1,6 @@
 # DAndroidUtils
 
-DAndroidUtils是david在Android开发中的一些常用功能封装。
+DAndroidUtils是(程序员小冰)david在Android开发中的一些常用功能封装。
 
 其中功能包括多种，如：多种实现loading等待框。你只需引入library之后一行代码
 
