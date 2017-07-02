@@ -72,7 +72,7 @@ DAndroidUtils是(程序员小冰)david在Android开发中的一些常用功能�
 1.0.2版本：再次添加一些工具类。并新增功能刷新以及加载更多的自定义View.
 
 
-当然如果我的项目帮到了你，欢迎进行打赏，请作者喝杯茶。毕竟开源不易。谢谢支持。
+当然如果我的项目帮到了你，欢迎进行打赏，请作者喝杯茶。谢谢支持。
 
 ![支付宝](http://img.blog.csdn.net/20170623085838863?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjEzNzY5ODU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
